@@ -11,6 +11,13 @@ export default class GreetPeople extends Component {
         };
     }
 
+    componentDidMount(){
+        setTimeout(
+            () => this.setState({doeName:'Alex'}),
+            3000
+        )
+    }
+
     render() {
         const janesName = 'Jane';
         return (
